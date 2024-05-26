@@ -14,7 +14,7 @@ Bookmarklet to switch between Jira environments
 1. Drag one of the following links onto your bookmarks bar
    * Open new tab: <a href="javascript: (() => {    if (window.location.hostname == 'test-instance.atlassian.net') {        window.open(window.location.href.replace('test-instance.atlassian.net', 'prod-instance.atlassian.net'))    } else if (window.location.hostname == 'prod-instance.atlassian.net') {        window.open(window.location.href.replace('prod-instance.atlassian.net', 'test-instance.atlassian.net'))    } else {        alert('Error: Unexpected URL.')    }})();">Switch Env</a>
    * Open in same tab: <a href="javascript: (() => {    if (window.location.hostname == 'test-instance.atlassian.net') {        window.open(window.location.href.replace('test-instance.atlassian.net', 'prod-instance.atlassian.net'), '_self')    } else if (window.location.hostname == 'test-instance.atlassian.net') {        window.open(window.location.href.replace('prod-instance.atlassian.net', 'test-instance.atlassian.net'), '_self')    } else {        alert('Error: Unexpected URL.')    }})();">Switch Env</a>
-2. If the above link does not show, go [here](https://sonatype.github.io/jira-environment-switcher/) first
+2. If the above link does not show, go [here](https://kevyuan.github.io/jira-environment-switcher/) first
 3. Modify the URLs for use with your environments
 
 #### Method 2: Manually create new bookmark
